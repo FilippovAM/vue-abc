@@ -37,10 +37,11 @@
                 </div>
 
                 <div class="form-group">
-                  <textarea placeholder="Optional - add any additional notes you think the student and parents would like to know."
-                            v-model="note"
-                            name="note"
-                            class="form-control teacher-report__note-textarea"></textarea>
+                  <textarea
+                    placeholder="Optional - add any additional notes you think the student and parents would like to know."
+                    v-model="note"
+                    name="note"
+                    class="form-control teacher-report__note-textarea"></textarea>
                 </div>
 
                 <div class="clearfix post-class-report_buttons">
@@ -82,3 +83,10 @@
     methods: {}
   }
 </script>
+
+<style>
+  .modal {
+    padding-left: 0 !important;
+    padding-right: 20px;
+  }
+</style>
