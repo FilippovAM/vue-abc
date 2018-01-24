@@ -110,8 +110,8 @@
           </tbody>
         </table>
       </div>
-      <button class="btn btn-primary">Show More</button>
-      <div class="pull-right download-hours__control">
+      <button class="btn btn-primary btn_show-more">Show More</button>
+      <div class="download-hours__control">
         <label class="label-select">Download Hours FOR:</label>
 
         <button class="btn btn-primary">Jan 18</button>
@@ -125,8 +125,52 @@
   export default {
     name: 'TeacherHours',
     data () {
-      return {
-      }
+      return {}
     }
   }
 </script>
+
+<style>
+  @media screen and (max-width: 780px) {
+    .primary-table {
+      min-width: 780px;
+    }
+
+    .primary-table-container {
+      overflow-x: auto;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .primary-table th {
+      padding: 20px 10px 15px 10px;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    .download-hours__control {
+      float: none;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .download-hours__control .label-select {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .download-hours__control {
+      margin-top: 25px;
+    }
+
+    .download-hours__control .btn {
+      margin-left:0;
+      margin-bottom:10px;
+    }
+
+    .btn_show-more {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+</style>

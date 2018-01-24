@@ -18,11 +18,11 @@
 
               <form action="#" @submit.prevent="validateBeforeSubmit">
                 <div class="row row-sm-padding-10">
-                  <div class="col-sm-8">
+                  <div class="col-md-8">
                     <div class="form-section">
                       <span class="form-label">Student Information</span>
                       <div class="row row-sm-padding-10">
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <input type="text"
                                    name="first-name"
@@ -35,7 +35,7 @@
                                   class="help is-danger">{{ errors.first('first-name')}}</span>
                           </div>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <input type="text"
                                    name="last-name"
@@ -50,7 +50,7 @@
                         </div>
                       </div>
                       <div class="row row-sm-padding-10">
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <div class="select-container">
                               <select
@@ -69,7 +69,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div :class="{'input': true, 'is-danger': errors.has('day-of-birth') }">
                             <date-picker
                               name="day-of-birth"
@@ -90,7 +90,7 @@
                     <div class="form-section">
                       <span class="form-label">Parent / Guardian Information</span>
                       <div class="row row-sm-padding-10">
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <input type="text"
                                    name="parent-first-name"
@@ -103,7 +103,7 @@
                                   class="help is-danger">{{ errors.first('parent-first-name')}}</span>
                           </div>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <input type="text"
                                    name="parent-last-name"
@@ -118,7 +118,7 @@
                         </div>
                       </div>
                       <div class="row row-sm-padding-10">
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <input type="email"
                                    name="parent-email"
@@ -131,7 +131,7 @@
                                   class="help is-danger">{{ errors.first('parent-email')}}</span>
                           </div>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <input type="tel"
                                    name="parent-phone"
@@ -146,7 +146,7 @@
                         </div>
                       </div>
                       <div class="row row-sm-padding-10">
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <input type="text"
                                    name="parent-weChat"
@@ -159,7 +159,7 @@
                     </div>
 
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-md-4">
                     <span class="form-label">Student Avatar</span>
                     <template>
                       <div class="picture-input-container">
@@ -183,7 +183,7 @@
 
                 <span class="form-label">Update Password</span>
                 <div class="row row-sm-padding-10">
-                  <div class="col-sm-4">
+                  <div class="col-md-4 col-sm-6">
                     <div class="form-group">
                       <input type="password"
                              name="password"
@@ -196,7 +196,7 @@
                             class="help is-danger">{{ errors.first('password')}}</span>
                     </div>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-md-4 col-sm-6">
                     <div class="form-group">
                       <input type="password"
                              name="confirm-password"
@@ -209,7 +209,7 @@
                             class="help is-danger">{{ errors.first('confirm-password')}}</span>
                     </div>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-0">
                     <button type="submit" class="btn btn-secondary btn-block">Update Profile</button>
                   </div>
                 </div>

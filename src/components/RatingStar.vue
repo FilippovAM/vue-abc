@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <div class="rating-stars" v-html="showStar">
-    </div>
+  <div class="rating-stars" v-html="showStar">
   </div>
 
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <header class="header-bg_blue">
+  <header class="header-bg_blue header__class-room">
     <div class="container">
       <div class="header__container">
         <div class="logo header__container_column header__container_column-m">
@@ -19,7 +19,7 @@
             <span class="nav-info__item__text_small nav-info__item__text js-mins-late">01 mins.</span>
           </li>
         </ul>
-        <div class="header__container_column header__container_column-m text-right">
+        <div class="header__container_column header__container_column-m text-right header__nav-buttons">
           <button type="button" class="btn btn-primary">REFRESH</button>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#js-class-modal">CLASS OVER</button>
         </div>

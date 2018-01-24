@@ -1,13 +1,13 @@
 <template>
-  <header class="header-bg_blue">
+  <header class="header-bg_blue header_common">
     <div class="container">
-      <div class="header__container">
+      <div class="header__container header__container_common">
         <div class="logo header__container_column header__container_column-m">
           <img class="img-responsive" src="static/img/logo.png" alt="ABC Logo">
         </div>
-        <student-nav v-if="isStudNav()"></student-nav>
+        <student-nav v-if="isStudNav"></student-nav>
         <teacher-nav v-else></teacher-nav>
-        <div class="header__container_column header__container_column-b text-right">
+        <div class="header__container_column header__container_column-b text-right nav-header__info_user">
           <div class="header__container_column_msg-shape">
             <a href="#" class="header-welcome__msg-container">
               <span class="header-welcome__msg-text">4</span>
@@ -43,7 +43,7 @@
       return {
       }
     },
-    methods: {
+    computed: {
       isStudNav: function () {
         return this.$route.path.indexOf('/student') !== -1
       }

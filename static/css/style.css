@@ -768,7 +768,7 @@ select {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   overflow: hidden;
-  background-image: linear-gradient( 180deg, #ffd668 0%, #ff9b37 99%);
+  background-image: linear-gradient(180deg, #ffd668 0%, #ff9b37 99%);
 }
 
 .nav-header__item_img-container {
@@ -783,8 +783,7 @@ select {
   border-bottom-right-radius: 8px;
   position: relative;
   z-index: 200;
-  background-image: linear-gradient( 180deg, #ffd668 0%, #ff9b37 99%);
-  position: relative;
+  background-image: linear-gradient(180deg, #ffd668 0%, #ff9b37 99%);
 }
 
 .nav-header__item_img-container::after {
@@ -816,7 +815,7 @@ select {
   padding: 16px 10px;
   float: left;
   background: #ffd265;
-  background-image: linear-gradient( 180deg, #ffd668 0%, #ff9b37 99%);
+  background-image: linear-gradient(180deg, #ffd668 0%, #ff9b37 99%);
 }
 
 .nav-header__item-active,
@@ -827,14 +826,14 @@ select {
 
 .nav-header__item-active .nav-header__item_link,
 .router-link-active .nav-header__item_link,
-.nav-header__item:hover .nav-header__item_link{
+.nav-header__item:hover .nav-header__item_link {
   background: #fff;
   color: #5887cd;
 }
 
 .nav-header__item-active .nav-header__item_img-container,
 .router-link-active .nav-header__item_img-container,
-.nav-header__item:hover .nav-header__item_img-container{
+.nav-header__item:hover .nav-header__item_img-container {
   background: #cddbf0;
 }
 
@@ -983,6 +982,10 @@ select {
   margin-left: 5px;
 }
 
+.download-hours__control {
+  float: right;
+}
+
 .download-hours__control .btn {
   margin-left: 5px;
 }
@@ -1072,20 +1075,161 @@ select {
 /**/
 
 /* Teacher Notifications */
-/*.modal-table {
-  width: 100%;
+
+/**/
+
+/* Student Report Monthly */
+.stud-report_container {
+  border-radius: 7.5px;
+  background-color: #eeeef0;
 }
 
-.modal-table td {
-  font-size: 16px;
+.stud-report__header {
+  padding: 40px;
+  position: relative;
+}
+
+.stud-report__header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  border-top: 2px solid #fff;
+}
+
+.stud-report__header_title {
+  font-family: 'Titan One';
+  font-size: 55px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 0.95;
-  letter-spacing: 0.4px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4c75b1;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.stud-report__main {
+  padding: 60px 75px;
+}
+
+.stud-report__main .stud-report__main_item:last-child {
+  margin-bottom: 0;
+}
+
+.stud-report__main_item {
+  padding: 25px 35px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: solid 1.5px #4c75b1;
+  margin-bottom: 25px;
+}
+
+.stud-report__header_label {
+  font-family: 'Titan One';
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
   text-align: left;
-  color: #616161;
-}*/
+  color: #4c75b1;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.stud-report__header___text_container {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.js-lesson-evaluation {
+  font-family: 'Open Sans';
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: normal;
+  text-align: left;
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+
+.report-comments-block_header_title {
+  font-family: 'Titan One';
+  font-size: 37.2px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  /*text-align: left;*/
+  color: #4c75b1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.report-comments-block_main {
+  margin-top: 15px;
+}
+
+.report-comments-block_main_title {
+  font-family: 'Titan One';
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #4c75b1;
+  text-transform: uppercase;
+  text-align: center;
+  /*margin-bottom: 20px;*/
+  padding: 10px;
+  background: #fff;
+  display: inline-block;
+  margin-top: -20px;
+  position: relative;
+  z-index: 500;
+  margin-bottom: 0;
+}
+
+.report-comments-block_main_title-container {
+  position: relative;
+  text-align: center;
+}
+
+.report-comments-block_main_title-container::after {
+  z-index: 300;
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 10px;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #4c75b1;
+}
+
+.report-comments-block_main_text {
+  font-family: 'Open Sans';
+  font-size: 14.5px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4c75b1;
+}
+
+.report-comments-block_main_text {
+  margin-top: 5px;
+}
+
 /**/
 
 /* Rating Stars */
@@ -1113,7 +1257,7 @@ select {
 
   .header__sidebar-menu {
     position: absolute;
-    left: -101px;
+    left: -107px;
     top: 130px;
     height: auto;
     z-index: 999;
@@ -1137,7 +1281,23 @@ select {
   }
 
   .nav-header__item:hover {
-    left: 93px;
+    left: 107px;
+  }
+
+  .teacher-hours__info_item {
+    margin-bottom: 15px;
+  }
+
+  .teacher-hours__info {
+    margin-bottom: 20px;
+  }
+
+  .report-row__container {
+    overflow-x: scroll;
+  }
+
+  .report-row__table {
+    min-width: 638px;
   }
 }
 
@@ -1171,9 +1331,28 @@ select {
   .primary-table td {
     padding: 29px 30px 29px 30px;
   }
+
+  .modal .close-icon_container {
+    position: absolute;
+    right: -15px;
+    top: -20px;
+    padding: 6px;
+  }
+
+  .modal .close-icon {
+    font-size: 20px;
+  }
+
+  .modal-dialog {
+    margin-top: 25px;
+  }
+
+  .modal-body__table_container {
+    overflow-x: scroll;
+  }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .nav-info {
     height: auto;
   }
@@ -1184,5 +1363,57 @@ select {
     border-radius: 0;
     border: none;
     border-top: 1px solid #ddd;
+  }
+
+  .header__class-room .logo {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .header__class-room {
+    height: auto;
+  }
+
+  .header__nav-buttons {
+    display: block;
+    text-align: center;
+  }
+
+  .header__nav-buttons .btn {
+    margin-bottom: 15px;
+  }
+
+  .reports [class*=col-] {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__container_common .logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .nav-header__info_user {
+    display: block;
+    text-align: center;
+  }
+
+  .header_common {
+    height: auto;
+  }
+
+  .header_common .logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .teacher-hours__info_item {
+    font-size: 16px;
+  }
+
+  .teacher-hours__info_text {
+    font-size: 20px;
   }
 }

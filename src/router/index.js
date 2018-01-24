@@ -12,6 +12,8 @@ import TeacherProfile from '@/pages/TeacherProfile'
 import TeacherNotifications from '@/pages/TeacherNotifications'
 import StudentNotifications from '@/pages/StudentNotifications'
 import PostClassReport from '@/components/PostClassReport'
+import StudMonthlyReport from '@/pages/StudMonthlyReport'
+import StudMonthlyReportNotes from '@/pages/StudMonthlyReportNotes'
 
 Vue.use(Router)
 
@@ -76,6 +78,16 @@ export default new Router({
       path: '/class-room/post-report',
       name: 'PostClassReport',
       component: PostClassReport
+    },
+    {
+      path: '/student/monthly-report/1',
+      name: 'StudMonthlyReport',
+      component: StudMonthlyReport
+    },
+    {
+      path: '/student/monthly-report/2',
+      name: 'StudMonthlyReportNotes',
+      component: StudMonthlyReportNotes
     }
   ]
 })

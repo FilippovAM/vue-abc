@@ -18,11 +18,11 @@
 
               <form action="#" @submit.prevent="validateBeforeSubmit">
                 <div class="row row-sm-padding-10">
-                  <div class="col-sm-8">
+                  <div class="col-md-8 col-sm-12">
                     <div class="form-section">
                       <span class="form-label">Teacher Information</span>
                       <div class="row row-sm-padding-10">
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <input type="text"
                                    name="first-name"
@@ -35,7 +35,7 @@
                                   class="help is-danger">{{ errors.first('first-name')}}</span>
                           </div>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <input type="text"
                                    name="last-name"
@@ -51,7 +51,7 @@
                       </div>
 
                       <div class="row row-sm-padding-10">
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <input type="email"
                                    name="email"
@@ -64,7 +64,7 @@
                                   class="help is-danger">{{ errors.first('email')}}</span>
                           </div>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <input type="tel"
                                    name="phone"
@@ -80,7 +80,7 @@
                       </div>
 
                       <div class="row row-sm-padding-10">
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <input type="text"
                                    name="weChat"
@@ -89,7 +89,7 @@
                                    placeholder="WeChat">
                           </div>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <input type="text"
                                    name="weChat"
@@ -117,7 +117,7 @@
                     <div class="form-section">
                       <span class="form-label">Update Password</span>
                       <div class="row row-sm-padding-10">
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <input type="password"
                                    name="password"
@@ -130,7 +130,7 @@
                                   class="help is-danger">{{ errors.first('password')}}</span>
                           </div>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <input type="password"
                                    name="confirm-password"
@@ -148,7 +148,7 @@
                     <div class="form-section form-section_last">
                       <span class="form-label">Bank Payment Information</span>
                       <div class="row row-sm-padding-10">
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <input type="text"
                                    name="bank-name"
@@ -161,7 +161,7 @@
                                   class="help is-danger">{{ errors.first('bank-name')}}</span>
                           </div>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <input type="text"
                                    name="bank-account"
@@ -174,7 +174,7 @@
                                   class="help is-danger">{{ errors.first('bank-account')}}</span>
                           </div>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-sm-6">
                           <div class="form-group">
                             <input type="text"
                                    name="bank-swift-code"
@@ -190,7 +190,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-md-4 col-sm-6">
                     <span class="form-label">Teacher Photo</span>
                     <template>
                       <div class="picture-input-container">
@@ -212,11 +212,11 @@
                   </div>
                 </div>
                 <div class="row row-sm-padding-10">
-                  <div class="col-sm-8">
+                  <div class="col-md-8">
                     <p class="modal-note__text">
                       Note: overseas bank account will incur a US$25 international transfer fee. This is charged by the banks, not by ABC Stars</p>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-md-4 col-sm-6">
                     <button type="submit" class="btn btn-secondary btn-block">Update Profile</button>
                   </div>
                 </div>
@@ -292,3 +292,10 @@
   }
 </script>
 
+<style>
+  @media screen and (max-width: 767px) {
+    .picture-input-container {
+      margin-bottom: 15px;
+    }
+  }
+</style>

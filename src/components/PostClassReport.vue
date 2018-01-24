@@ -25,9 +25,11 @@
 
               <form class="post-class-report_form" action="">
                 <div class="form-group">
-                  <table class="report-row__table">
-                    <teacher-report-item v-for="report in reportItems" :text="report"></teacher-report-item>
-                  </table>
+                  <div class="report-row__container">
+                    <table class="report-row__table">
+                      <teacher-report-item v-for="report in reportItems" :text="report"></teacher-report-item>
+                    </table>
+                  </div>
                 </div>
 
                 <div class="form-group">

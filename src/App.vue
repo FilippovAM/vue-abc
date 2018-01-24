@@ -14,6 +14,8 @@
       <router-link class="test-preview__link" v-bind:to="'/teacher/notifications'">Teacher Notifications</router-link>
       <router-link class="test-preview__link" v-bind:to="'/student/notifications'">Student Notifications</router-link>
       <router-link class="test-preview__link" v-bind:to="'/class-room/post-report'">Post Class Report</router-link>
+      <router-link class="test-preview__link" v-bind:to="'/student/monthly-report/1'">Student Monthly Report</router-link>
+      <router-link class="test-preview__link" v-bind:to="'/student/monthly-report/2'">Student Monthly Report Notes</router-link>
     </div>
 
   </div>

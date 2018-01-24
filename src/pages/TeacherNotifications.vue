@@ -34,55 +34,57 @@
             </div>
 
             <div class="modal-body">
-              <table class="primary-table modal-table">
-                <tbody>
-                <tr>
-                  <td width="25%">
-                    23 January, 2018
-                  </td>
-                  <td>
-                    *Notificatoin copy*
-                  </td>
-                  <td><a href="">Mark as read</a></td>
-                </tr>
-                <tr>
-                  <td>
-                    23 January, 2018
-                  </td>
-                  <td>
-                    *Notificatoin copy*
-                  </td>
-                  <td><a href="">Mark as read</a></td>
-                </tr>
-                <tr>
-                  <td>
-                    23 January, 2018
-                  </td>
-                  <td>
-                    *Notificatoin copy*
-                  </td>
-                  <td><a href="">Mark as read</a></td>
-                </tr>
-                <tr>
-                  <td>
-                    23 January, 2018
-                  </td>
-                  <td>
-                    *Notificatoin copy*
-                  </td>
-                  <td><a href="">Mark as read</a></td>
-                </tr>
-                <tr>
-                  <td>
-                    23 January, 2018
-                  </td>
-                  <td>
-                    *Notificatoin copy*
-                  </td>
-                  <td><a href="">Mark as read</a></td>
-                </tr>
-                </tbody>
-              </table>
+              <div class="modal-body__table_container">
+                <table class="primary-table modal-table">
+                  <tbody>
+                  <tr>
+                    <td width="25%">
+                      23 January, 2018
+                    </td>
+                    <td>
+                      *Notificatoin copy*
+                    </td>
+                    <td><a href="">Mark as read</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      23 January, 2018
+                    </td>
+                    <td>
+                      *Notificatoin copy*
+                    </td>
+                    <td><a href="">Mark as read</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      23 January, 2018
+                    </td>
+                    <td>
+                      *Notificatoin copy*
+                    </td>
+                    <td><a href="">Mark as read</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      23 January, 2018
+                    </td>
+                    <td>
+                      *Notificatoin copy*
+                    </td>
+                    <td><a href="">Mark as read</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      23 January, 2018
+                    </td>
+                    <td>
+                      *Notificatoin copy*
+                    </td>
+                    <td><a href="">Mark as read</a></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
 
