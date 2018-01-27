@@ -41,11 +41,52 @@
     components: {TeacherNav, StudentNav},
     data () {
       return {
+        sideBarMenuClass: '.header__sidebar-menu'
       }
     },
     computed: {
       isStudNav: function () {
         return this.$route.path.indexOf('/student') !== -1
+      }
+    },
+    mounted () {
+      this.checkSideBarMenuPosAndInit();
+    },
+    methods: {
+      checkSideBarMenuPosAndInit () {
+        let $sideBarMenu = $(this.sideBarMenuClass);
+
+        if ($sideBarMenu.length) {
+          if (window.matchMedia('(max-width: 991px)').matches) {
+            this.initSideBarMenuPosForMobile();
+          } else {
+            $sideBarMenu.css({
+              'position': '',
+              'top': ''
+            });
+
+            $(window).unbind('.sideBarMenuScroll');
+          }
+        }
+      },
+      initSideBarMenuPosForMobile() {
+        let $sideBarMenu = $(this.sideBarMenuClass);
+        let offsetTop = 130;
+        let newOffsetTop = 20;
+
+        $(window).bind('scroll.sideBarMenuScroll', function () {
+          if ($(this).scrollTop() > offsetTop - newOffsetTop) {
+            $sideBarMenu.css({
+              'position': 'fixed',
+              'top': newOffsetTop + 'px'
+            });
+          } else {
+            $sideBarMenu.css({
+              'position': 'absolute',
+              'top': offsetTop + 'px'
+            });
+          }
+        });
       }
     }
   }

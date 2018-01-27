@@ -1280,6 +1280,10 @@ select {
     float: right;
   }
 
+  .nav-header__item {
+    width: 152px;
+  }
+
   .nav-header__item:hover {
     left: 107px;
   }

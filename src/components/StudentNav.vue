@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav-header list-unstyled header__container_column header__container_column-b header__sidebar-menu">
+  <nav class="nav-header header__container_column header__container_column-b header__sidebar-menu">
     <router-link v-bind:to="'/student/classes'" class="nav-header__item nav-header__item_first">
       <div class="nav-header__item_img-container">
         <img class="nav-header__item_img nav-header__item_img-clasess" src="static/img/classes.png" alt="">
